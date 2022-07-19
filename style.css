@@ -1,0 +1,164 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    width: 80%;
+    height: 100vh;
+    justify-content: center;
+}
+
+.cel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-height: 100%;
+}
+
+.cel-container img {
+    width: 100vh;
+    max-height: 100%;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    min-height: 100%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    min-height: 50%;
+    background-color: #ffffff;
+    border: 1px solid rgb(160, 160, 160);
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 50%;
+}
+
+.profile-picture {
+    width: 25%;
+    border-radius: 50%;
+}
+
+.button {
+    background-color: #0095f6;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.button-rev {
+    color: #0095f6;
+}
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    min-height: 10%;
+    background-color: #ffffff;
+    border: 1px solid rgb(160, 160, 160);
+    margin-bottom: 15px;
+}
+
+.not-account {
+    color: rgb(160, 160, 160);
+}
+
+.get-the-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    min-height: 10%;
+}
+
+.download-imgs {
+    display: flex;
+    justify-content: space-around;
+}
+
+.get-the-app img {
+    margin-top: 10px;
+    width: 40%;
+    max-height: 100%;
+}
+
+@media(max-width:1024px) {
+
+    .cel-container img {
+        min-width: 100vh;
+        min-height: 60%;
+    }
+
+    .login {
+        width: 90%;
+    }
+
+    .login-options {
+        width: 90%;
+    }
+
+    .get-the-app {
+        width: 90%;
+    }
+}
+
+@media(max-width:650px) {
+    .cel-container {
+        display: none;
+    }
+
+    .main-container {
+        width: 90%;
+    }
+
+    .options-container {
+        width: 100%;
+        align-items: center;
+    }
+
+    .login {
+        width: 100%;
+        border: 0;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .login-options {
+        width: 100%;
+        border: 0;
+        background-color: rgb(240, 240, 240);
+    }
+
+    .get-the-app {
+        width: 100%;
+    }
+}
